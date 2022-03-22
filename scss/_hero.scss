@@ -1,4 +1,6 @@
 .hero {
+  background: $veryLightGray;
+
   .container {
     @include breakpoint-down(medium) {
       padding: 0;
