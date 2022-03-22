@@ -12,7 +12,7 @@
 
   .hero-image {
     position: relative;
-    background: url(/images/bg-intro-mobile.svg) no-repeat center / cover;
+    background: url(../images/bg-intro-mobile.svg) no-repeat center / cover;
     min-height: 17.5rem;
 
     @include breakpoint-up(medium) {
@@ -31,7 +31,7 @@
         position: absolute;
         height: 100%;
         width: 150%;
-        background: url(/images/bg-intro-desktop.svg) no-repeat -5% 83% / 122%;
+        background: url(../images/bg-intro-desktop.svg) no-repeat -5% 83% / 122%;
       }
     }
 
