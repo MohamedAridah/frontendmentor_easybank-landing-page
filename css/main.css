@@ -285,7 +285,7 @@ button:hover::after,
 
 .hero .hero-image {
   position: relative;
-  background: url(/images/bg-intro-mobile.svg) no-repeat center/cover;
+  background: url(../images/bg-intro-mobile.svg) no-repeat center/cover;
   min-height: 17.5rem;
 }
 
@@ -308,7 +308,7 @@ button:hover::after,
     position: absolute;
     height: 100%;
     width: 150%;
-    background: url(/images/bg-intro-desktop.svg) no-repeat -5% 83%/122%;
+    background: url(../images/bg-intro-desktop.svg) no-repeat -5% 83%/122%;
   }
 }
 
@@ -522,7 +522,8 @@ button:hover::after,
 @media (min-width: 64em) {
   .footer .container {
     display: grid;
-    grid-template-areas: "logo col1 col2 cta" "social col1 col2 copyright";
+    grid-template-areas: "logo col1 col2 cta"
+ "social col1 col2 copyright";
     justify-items: start;
     gap: 1rem;
   }
