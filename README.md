@@ -7,7 +7,7 @@
       Live
     </a>
     <span>&nbsp;|&nbsp;</span>
-    <a href="" title="Check My Solution on Frontend Mentor" target="_blank">
+    <a href="https://www.frontendmentor.io/solutions/easybank-landing-page-RY7S7zssL" title="Check My Solution on Frontend Mentor" target="_blank">
       Solution
     </a>
     <span>&nbsp;|&nbsp;</span>
