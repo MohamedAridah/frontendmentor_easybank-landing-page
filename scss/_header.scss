@@ -1,0 +1,117 @@
+.header {
+  position: relative;
+  padding: 1.0625rem 0;
+  z-index: 1;
+  background: $white;
+
+  nav {
+    position: relative;
+  }
+
+  .logo {
+    img {
+      width: 8.8125rem;
+      height: 1.375rem;
+    }
+  }
+
+  .main-navgation {
+    @include breakpoint-down(medium) {
+      position: absolute;
+      top: calc(100% + 3.875rem);
+      left: 0;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      background: $white;
+      border-radius: $border-radius;
+      padding: 1.625rem;
+      opacity: 0;
+      visibility: hidden;
+      z-index: -1;
+      transition: all $main-transition;
+
+      &.fade-in {
+        top: calc(100% + 2.625rem);
+        opacity: 1;
+        visibility: visible;
+        z-index: 1;
+      }
+    }
+    a {
+      padding: 0.625rem 0;
+      color: $darkBlue;
+      font-size: 1rem;
+      transition: $main-transition;
+
+      &:hover {
+        color: $grayishBlue;
+      }
+
+      @include breakpoint-up(large) {
+        position: relative;
+        font-size: $font-size-sm;
+        color: $grayishBlue;
+
+        &:not(:last-child) {
+          margin-right: 2rem;
+        }
+
+        &::after {
+          position: absolute;
+          content: "";
+          left: 0;
+          bottom: -1.25rem;
+          width: 100%;
+          height: 0.3125rem;
+          background: linear-gradient(
+            to right,
+            hsl(136, 65%, 51%),
+            hsl(192, 70%, 51%)
+          );
+          opacity: 0;
+          transition: opacity $main-transition;
+        }
+
+        &:hover {
+          color: $darkBlue;
+
+          &::after {
+            opacity: 1;
+          }
+        }
+      }
+    }
+  }
+
+  .menu {
+    width: 1.625rem;
+    cursor: pointer;
+
+    > span {
+      display: block;
+      width: 100%;
+      height: 0.125rem;
+      background: $darkBlue;
+      transform-origin: 0.1875rem 0.0625rem;
+      transition: transform $main-transition;
+
+      &:not(:last-child) {
+        margin-bottom: 0.3125rem;
+      }
+    }
+
+    &.open {
+      > span:first-child {
+        transform: rotate(45deg);
+      }
+      > span:nth-child(2) {
+        transform: scaleX(0);
+      }
+      > span:last-child {
+        transform: rotate(-45deg);
+      }
+    }
+  }
+}

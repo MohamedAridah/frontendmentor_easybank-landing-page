@@ -1,0 +1,78 @@
+.articles {
+  background: $veryLightGray;
+  padding: $sections-padding 0;
+
+  .articles-grid {
+    display: grid;
+    gap: 1.875rem;
+    grid-template-columns: 1fr;
+
+    @include breakpoint-up(medium) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    @include breakpoint-up(large) {
+      grid-template-columns: repeat(4, 1fr);
+    }
+  }
+
+  .article {
+    background: #fff;
+    border-radius: $border-radius;
+    box-shadow: 0 0.1875rem 0.75rem rgba(0, 0, 0, 0.15);
+    transition: transform $fast-transition;
+    overflow: hidden;
+
+    &:hover {
+      transform: scale(1.05);
+      cursor: pointer;
+    }
+  }
+
+  .article-image {
+    height: 12.5rem;
+
+    img {
+      width: 100%;
+      height: 100%;
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+  }
+
+  .article-text {
+    padding: 1.875rem 1.5625rem 2.75rem 1.5625rem;
+    @include breakpoint-up(medium) {
+      padding: 1.875rem 1.5625rem 1.5625rem 1.5625rem;
+    }
+  }
+
+  .article-author {
+    span {
+      display: block;
+      font-size: 0.75rem;
+      margin-bottom: 0.75rem;
+    }
+  }
+
+  .article-title {
+    h3 {
+      margin-bottom: 0.5rem;
+      font-size: 1rem;
+      line-height: 1.2;
+      transition: color $fast-transition;
+
+      &:hover {
+        color: $limeGreen;
+      }
+    }
+  }
+
+  .article-description {
+    p {
+      font-size: 0.8125rem;
+      line-height: 1.3;
+    }
+  }
+}
