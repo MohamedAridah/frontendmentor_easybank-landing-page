@@ -1,0 +1,61 @@
+/* Start Attribution Styles [NOT Related To Project Styles And Can Be Deleted] */
+.footer {
+  /* Reset Footer Bottom Padding*/
+  padding-bottom: 0;
+}
+
+.attribution {
+  // Sizes
+  $font-size: 0.8125rem;
+  // Colors
+  $font-color: #fff;
+  $links-color: hsl(136, 65%, 60%); // Change According To Design...
+  // Gaps
+  $flex-gap: 0.75rem;
+  // Spaces
+  $padding-top: 1.875rem; // 30px Change According To Design...
+  $padding-bottom: 1.5625rem; // 25px Change According To Design...
+  // Transitions
+  $fast-transition: 0.2s ease-in-out;
+  $main-transition: 0.3s ease-in-out;
+
+  color: $font-color;
+  font-size: $font-size;
+  text-align: center;
+  padding-top: $padding-top;
+  padding-bottom: $padding-bottom;
+
+  .outer-link {
+    color: $font-color;
+    margin-left: 0.0625rem;
+    transition: all $fast-transition;
+
+    &:hover {
+      color: $links-color;
+      cursor: pointer;
+    }
+  }
+
+  .social-media {
+    list-style: none;
+    margin-left: 0.3125rem;
+    display: inline-flex;
+    align-items: flex-end;
+    gap: $flex-gap;
+
+    img {
+      width: 22px;
+      height: 22px;
+      transition: transform $fast-transition;
+
+      &:hover {
+        transform: scale(1.08);
+      }
+
+      &.light {
+        filter: invert(1);
+      }
+    }
+  }
+}
+/* End Attribution */
