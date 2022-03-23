@@ -1,4 +1,4 @@
-![Challenge Design](./images/project-preview.png)
+![Challenge Design](https://raw.githubusercontent.com/MohamedAridah/frontendmentor_easybank-landing-page/main/images/project-preview.png)
 
 <div align="center">
  <h1>Easybank landing page</h1>
@@ -63,6 +63,7 @@ For this project i used:
   - Custom properties
   - Flexbox
   - CSS Grid
+- JavaScript
 - Mobile-first workflow
 
 ## What i learned
@@ -75,7 +76,7 @@ I need your opinions, feedbacks , how do you find my code structure? or any sugg
 
 ## Useful resources
 
-- [Coder Coder](https://www.youtube.com/c/TheCoderCoder) - her playlist on youtube helped me alot. Thanks Coder Coder!
+- [Coder Coder](https://www.youtube.com/c/TheCoderCoder) - this playlist on youtube helped me alot. Thanks Coder Coder!
 - **Adobe Xd** - I use adobe xd to check the size of elements.
 
 ## Acknowledgments
@@ -91,4 +92,4 @@ I need your opinions, feedbacks , how do you find my code structure? or any sugg
 - <img src="https://raw.githubusercontent.com/devicons/devicon/1a5dbfa142a9677d6ddaa05d05f377ac23af9a2e/icons/codepen/codepen-plain.svg" width="20" height="20"/> &nbsp;Codepen - [@FedLover](https://codepen.io/FedLover)
 - <img src="https://raw.githubusercontent.com/MohamedAridah/hosted-assets/main/FEM.png" width="20" height="20"/> &nbsp;Frontend Mentor - [@mo](https://www.frontendmentor.io/profile/MohamedAridah)
 
-**See you in another project!** 👋👩‍💻
+**See you in another project!** 👋👨‍💻
